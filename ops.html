@@ -10,19 +10,27 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row vh-100">
-            <div class="d-flex px-0">
-                <div class="col-md-2 text-light bg-dark">
-                    <img class="text-danger" style="filter:invert()" src="/images/calendar-week.svg" width="32" height="32" alt="">
+    <div class="container-fluid overflow-hidden">
+        <div class="row vh-100 overflow-auto">
+            <div class="px-0 col-12 col-sm-3 col-xl-2 px-sm-2 bg-dark d-flex sticky-top">
+                <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-light">
+                    <img style="filter:invert()" src="/images/calendar-week.svg" width="32" height="32" alt="">
                     <a class="nav-link active" aria-current="page" href="#">Active</a>
                     <a class="nav-link" href="#">Link</a>
                     <a class="nav-link" href="#">Link</a>
                     <a class="nav-link disabled">Disabled</a>
                 </div>
-               
+            </div>
+            <div class="col d-flex flex-column h-sm-100">
+                <main class="row overflow-auto">
+                    <div class="col pt-4">
+                        <h1>Тут будет интерактивный элемент с планированием </h1>
+                        <img src="/images/timeline_example.png" class="w-100" alt="">
+                    </div>
+                </main>
             </div>
         </div>
+        
     </div>
    
   
