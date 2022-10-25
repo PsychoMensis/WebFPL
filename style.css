@@ -1,3 +1,4 @@
+/* login page */
 .mask {
      position: relative;
      top: 0;
@@ -73,4 +74,19 @@
          background-size: cover;
          background-position: 50%;
      }
+ }
+
+ /* ops page */
+ body{
+    background: #eee;
+ }
+
+ #side_nav{
+    background: #000;
+    min-width: 250px;
+    max-width: 250px;
+ }
+ .content{
+    min-height: 100vh;
+    width: 100%;
  }
