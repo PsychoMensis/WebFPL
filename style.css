@@ -62,6 +62,16 @@
          background-size: cover;
          background-position: 50%;
      }
+     #side_nav{
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+        transition: all 0.2s;
+    }
+     #side_nav.active{
+        margin-left:0;
+     }
  }
  
  @media (max-width: 480px) {
@@ -89,4 +99,14 @@
  .content{
     min-height: 100vh;
     width: 100%;
+ }
+ .sidebar li.active{
+    background: #eee;
+    border-radius: 8px;
+ }
+ .sidebar li.active a, .sidebar li.active a:hover{
+    color: #000;
+ }
+ .sidebar li a{
+    color:#fff;
  }
